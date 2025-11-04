@@ -1,6 +1,21 @@
 export default async function handler(req: Request) {
+  // Ustawienia nagłówków CORS
+  const corsHeaders = {
+    'Access-Control-Allow-Origin': '*', // W produkcji warto zmienić na konkretną domenę
+    'Access-Control-Allow-Methods': 'GET, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  };
+
+  // Obsługa zapytania CORS preflight
+  if (req.method === 'OPTIONS') {
+    return new Response(null, {
+      status: 204,
+      headers: corsHeaders,
+    });
+  }
+
   if (req.method !== 'GET') {
-    return new Response('Method Not Allowed', { status: 405 });
+    return new Response('Method Not Allowed', { status: 405, headers: corsHeaders });
   }
 
   // Symulacja pobierania postów z forum dla danego użytkownika
@@ -42,6 +57,7 @@ export default async function handler(req: Request) {
   return new Response(JSON.stringify(userPosts), {
     status: 200,
     headers: {
+      ...corsHeaders,
       'Content-Type': 'application/json',
     },
   });
