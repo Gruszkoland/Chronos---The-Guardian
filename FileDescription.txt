@@ -1,0 +1,32 @@
+📂 Struktura Katalogów:
+├── dist/            ⭐ To jest wersja produkcyjna (zalecana do bezpośredniego użycia)
+│   ├── index.html   → Otwórz ten plik w przeglądarce, aby zobaczyć podgląd strony
+│   ├── assets/      → Zawiera zintegrowane pliki CSS, JS i inne zasoby
+│   └── ...
+├── src/             📝 Katalog kodu źródłowego (do rozwoju i modyfikacji)
+│   ├── components/  → Komponenty React
+│   ├── App.jsx      → Główny komponent aplikacji
+│   ├── index.js     → Plik wejściowy
+│   └── ...
+├── package.json     📦 Konfiguracja zależności projektu
+├── README.md        📖 Dokumentacja projektu
+└── ...
+
+🚀 Szybki Start (Dwie Opcje):
+Opcja 1: Bezpośrednie Użycie (Zalecane dla Początkujących)
+1. Przejdź do katalogu dist/
+2. Kliknij dwukrotnie plik index.html
+3. Strona otworzy się w Twojej przeglądarce!
+
+Opcja 2: Tryb Rozwoju (Dla Użytkowników z Doświadczeniem w Kodowaniu)
+1. Upewnij się, że masz zainstalowany Node.js (zalecana wersja: 16+)
+2. Otwórz terminal/wiersz poleceń w katalogu głównym projektu
+3. Uruchom: npm install
+4. Uruchom: npm start
+5. Serwer deweloperski automatycznie otworzy się w Twojej przeglądarce
+
+💡 Wskazówki:
+- Katalog dist/ zawiera zoptymalizowaną wersję i może być bezpośrednio wdrożony na serwer
+- Plik index.html na poziomie głównym nie jest wersją końcową — zawsze używaj tego wewnątrz dist/
+- Aby zmodyfikować kod, edytuj pliki wewnątrz src/ i przebuduj projekt
+- Projekt korzysta z technologii TypeScript i Tailwind CSS

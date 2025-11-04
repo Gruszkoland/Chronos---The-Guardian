@@ -1,0 +1,86 @@
+🚀 Przewodnik po Wdrażaniu Strony Internetowej
+===========================
+
+📋 Przygotowanie:
+Upewnij się, że masz już katalog dist/ — zawiera on finalną wersję Twojej strony
+
+💡 Wdrożenie na Platformach Chmurowych (Zalecane):
+
+🌟 Vercel (vercel.com) – Najprostsze
+1. Przejdź na vercel.com i zarejestruj się
+2. Kliknij "New Project"
+3. Wybierz "Browse All Templates" → "Static"
+4. Przeciągnij i upuść folder dist/ w obszarze przesyłania
+5. Wprowadź nazwę projektu, kliknij "Deploy"
+6. Otrzymaj darmowy adres HTTPS w ciągu kilku minut!
+
+☁️ Cloudflare Pages (pages.cloudflare.com) – Najszybsze
+1. Przejdź na pages.cloudflare.com i zaloguj się
+2. Kliknij "Create a project" → "Upload assets"
+3. Spakuj folder dist/
+4. Prześlij plik zip
+5. Ustaw nazwę projektu, kliknij "Deploy site"
+6. Ciesz się globalnym przyspieszeniem CDN!
+
+🔥 Netlify (netlify.com) – Przyjazne dla Użytkownika
+1. Przejdź na netlify.com i zarejestruj się
+2. Przeciągnij i upuść folder dist/ w obszarze przesyłania na stronie głównej
+3. Poczekaj na zakończenie przesyłania
+4. Otrzymasz losową domenę (można dostosować w ustawieniach)
+
+📘 GitHub Pages (pages.github.com) – Darmowe i Niezawodne
+1. Utwórz nowe repozytorium na GitHub
+2. Prześlij zawartość folderu dist/ do repozytorium
+3. Przejdź do Ustawień repozytorium → Pages
+4. Wybierz "Deploy from a branch" → główna gałąź
+5. Uzyskaj dostęp do swojej strony pod adresem username.github.io/nazwa-repozytorium
+
+---
+
+🔧 Zaawansowane Wdrożenie (Dla Deweloperów):
+
+Automatyczne Wdrożenie oparte na Git
+1. Wypchnij cały projekt (w tym kod źródłowy) na GitHub/GitLab
+2. Połącz swoje repozytorium z Vercel/Netlify
+3. Skonfiguruj ustawienia budowy:
+   - Komenda budowy: npm run build
+   - Katalog publikacji: dist
+   - Wersja Node.js: 16.x lub wyższa
+4. Każde wypchnięcie automatycznie uruchomi budowę i wdrożenie
+
+Tradycyjne Wdrożenie na Serwerze
+Jeśli posiadasz własny serwer:
+1. Prześlij wszystkie pliki z katalogu dist/ do katalogu głównego serwera
+2. Upewnij się, że serwer obsługuje hosting plików statycznych
+3. Uzyskaj dostęp do swojej strony przez swoją domenę
+
+---
+
+💰 Informacje o Cenniku:
+- Vercel: Darmowy plan wystarczający do użytku osobistego
+- Cloudflare Pages: Całkowicie darmowe, bez limitów
+- Netlify: Darmowy plan obejmuje 100GB transferu miesięcznie
+- GitHub Pages: Całkowicie darmowe, 100GB transferu miesięcznie
+
+---
+
+🎯 Rekomendacje:
+- Początkujący: Vercel lub Netlify (przesyłanie metodą przeciągnij i upuść)
+- Skupienie na szybkości: Cloudflare Pages
+- Projekty długoterminowe: GitHub Pages
+- Deweloperzy: Automatyczne Wdrożenie oparte na Git
+
+---
+
+⚡ Wskazówki:
+- Wszystkie platformy oferują darmowe certyfikaty HTTPS
+- Możesz podłączyć niestandardowe domeny (niektóre wymagają płatnych planów)
+- Po wdrożeniu, przetestuj swoją stronę na różnych urządzeniach
+
+---
+
+🆘 Rozwiązywanie Problemów:
+1. Upewnij się, że przesyłasz zawartość dist/, a nie cały projekt
+2. Sprawdź, czy index.html znajduje się w katalogu głównym
+3. Przejrzyj dzienniki błędów na platformie hostingowej
+4. Upewnij się, że wszystkie pliki zostały poprawnie przesłane
