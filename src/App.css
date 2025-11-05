@@ -1,0 +1,112 @@
+/* App.css - Main application styles */
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #282c34;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.App-button:hover {
+  background-color: #4fa8c5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(97, 218, 251, 0.4);
+}
+
+.App-button:active {
+  transform: translateY(0);
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #4fa8c5;
+  text-decoration: underline;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Content section styles */
+.content-section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .App {
+    font-size: calc(8px + 2vmin);
+  }
+  
+  .App-header {
+    min-height: 15vh;
+    margin: 10px;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+}
